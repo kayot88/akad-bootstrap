@@ -1,0 +1,152 @@
+.footer-cta{
+	max-height: 325px;
+	background-color: $navy;	
+	&__title{
+		margin-top: 50px;
+		color: white;
+		//font-family: Montserrat;
+		font-size: 30px;
+		font-weight: 700;
+		line-height: 48px;
+	}
+	&__button{
+		color: #7beec7;
+		background-color: #fff;
+		font-family: Montserrat;
+		font-size: 14px;
+		font-weight: 700;
+		text-transform: uppercase;
+		line-height: 49px;
+		padding: 20px;
+		text-decoration: none;
+		&:hover{
+			text-decoration: none;
+			color: #7beec7;
+			// color: #fff;
+		}
+	}
+}
+.footer-form{
+	background-color: #fff;
+	padding: 15px 25px;
+	margin-top: 50px;
+	&__title{
+
+		color: #60606e;
+		font-family: Montserrat;
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 36px;
+		text-transform: uppercase;
+	}
+	&__text{
+		color: #999;
+		//font-family: "Myriad Pro";
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 24px;
+	}
+	input[type=email] {
+		appearance: none;
+		border-radius: 0;	
+		border: 1px solid #e5e5e5 ;
+		line-height: 48;
+		height: 50px;
+		padding: 0 18px;
+		text-transform: uppercase;
+		font-size: 12px;
+		vertical-align: middle;
+		outline: none;
+		width: calc(100% - 135px);
+		@include placeholder(#cdcdcd, none, 12px, Montserrat, uppercase);
+	}
+	button{
+		width: 135px;
+		height: 50px;
+		background-color: #7beec7;
+		appearance: none;
+		cursor: pointer;
+		vertical-align: middle;
+		border: none;
+		color: white;
+		font-family: Montserrat;
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 48px;
+		text-transform: uppercase;
+	}
+	&__form{
+		font-size: 0;
+	}
+}
+
+.footer-main{
+	&__nav{
+		list-style: none;
+		margin: auto 0;
+		//margin-top: 50px;
+		padding-left: 0;
+	}
+	&__item{
+		display: inline-block;
+		position: relative;
+		&:not(:first-child) {
+			padding-left: 30px;		
+		}
+		&:not(:last-child):after{
+			position: absolute;
+			content: '';
+			top: calc(50% - 1px);
+			right: -20px;
+			background-color: $main;
+			height: 2px;
+			width: 4px;
+		}
+	}
+	&__link{
+		text-transform: uppercase;
+		color: $main;
+		line-height: 14px;
+		font-size: 14px;
+		&:hover{
+			color: $navy;		
+			text-decoration: none;
+		}
+	}
+	&__copy{
+		color: #9a9a9a;
+		//font-family: "Myriad Pro";
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 14px;
+		text-transform: uppercase;
+		margin: auto 0;
+
+	}
+}
+.social{
+	text-align: right;
+}
+.social a{
+	color: #999;
+	font-family: Ionicons;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 48px;
+	text-transform: uppercase;
+	padding-left: 15px;
+	$include: transition(.5s); 
+	&:hover{
+		color: $navy;
+		$include: transition(.5s); 
+	}
+}
+.footer-row{
+	margin-top: 45px;
+	height: 25px;
+}
+.footer-main{
+	height: 110px !important;
+}
+#footer{
+}

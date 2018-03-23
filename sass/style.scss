@@ -1,0 +1,50 @@
+//base
+@import './base/_mixins.scss';
+@import './base/_colors.scss';
+@import './base/_fonts.scss';
+@import './base/_animations.scss';
+
+//sections: ;
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "./sections/about.scss";
+@import './sections/second.scss';
+@import './sections/main-screen.scss';
+@import './sections/our-services.scss';
+@import './sections/achievements.scss';
+@import './sections/portfolio.scss';
+@import './sections/already.scss';
+//@import 'css/component.css';
+// @import './sections/team.scss';
+// @import './sections/awesome-projects.scss';
+@import './sections/footer.scss';
+// @import './sections/testimonials.scss';
+// @import './sections/contact.scss';
+// @import './sections/locate.scss';
+// @import './sections/footer.scss';
+@import './sections/slicebox.scss';
+// @import './sections/smart.scss';
+
+// body{
+	// 	font-family: Montserrat;
+	// }
+
+	.container {
+		margin: 0 auto !important;
+	}
+	html{
+		overflow-x: hidden;
+	}
+	@font-face {
+		font-family: "MyriadProBold";
+		src: url("../fonts/MyriadPro-Regular.otf");
+		//src: url("../fonts/MyriadProBold/MyriadProBold.eot?#iefix")format("embedded-opentype"),
+		//url("../fonts/MyriadProBold/MyriadProBold.woff") format("woff"),
+		//url("../fonts/MyriadProBold/MyriadProBold.ttf") format("truetype");
+		font-style: normal;
+		font-weight: normal;
+	}
+	img{ 
+		@media all and (max-width: 576px) {
+			display: none;
+		}
+	}
